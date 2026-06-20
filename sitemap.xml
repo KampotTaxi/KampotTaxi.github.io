@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://kampottaxi.github.io/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://kampottaxi.github.io/taxi-transfers/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/kampot-tours/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/vehicles/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/booking/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/contact/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-to-phnom-penh-city/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-to-phnom-penh-airport/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/phnom-penh-airport-to-kampot/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-to-sihanoukville/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-to-kep/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-to-bokor-mountain/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-mangrove-forest-trip/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-full-day-tour/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-half-day-tour/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-to-siem-reap/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/kampot-to-koh-rong-ferry/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kampottaxi.github.io/routes/custom-cambodia-route/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

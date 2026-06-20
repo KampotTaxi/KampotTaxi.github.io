@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kampottaxi.github.io/sitemap.xml
