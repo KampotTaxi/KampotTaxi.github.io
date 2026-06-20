@@ -1,281 +1,554 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Book a Taxi | Kampot Taxi by Tha WhatsApp Request</title>
-    <meta name="description" content="Send a WhatsApp taxi request to Kampot Taxi by Tha. Choose route, vehicle, pickup, destination, date, passengers, luggage, and contact details. No backend or data storage.">
-    <link rel="canonical" href="https://kampottaxi.github.io/booking/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Book a Taxi | Kampot Taxi by Tha WhatsApp Request">
-    <meta property="og:description" content="Send a WhatsApp taxi request to Kampot Taxi by Tha. Choose route, vehicle, pickup, destination, date, passengers, luggage, and contact details. No backend or data storage.">
-    <meta property="og:url" content="https://kampottaxi.github.io/booking/">
-    <meta property="og:image" content="../assets/images/PhnomPenh2.PNG">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Book a Taxi | Kampot Taxi by Tha WhatsApp Request">
-    <meta name="twitter:description" content="Send a WhatsApp taxi request to Kampot Taxi by Tha. Choose route, vehicle, pickup, destination, date, passengers, luggage, and contact details. No backend or data storage.">
-    <meta name="twitter:image" content="../assets/images/PhnomPenh2.PNG">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Khmer:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <script type="application/ld+json">{
-      "@context": "https://schema.org",
-      "@type": "TaxiService",
-      "name": "Kampot Taxi by Tha",
-      "serviceType": "Private taxi and driver service",
-      "description": "Send a WhatsApp taxi request to Kampot Taxi by Tha. Choose route, vehicle, pickup, destination, date, passengers, luggage, and contact details. No backend or data storage.",
-      "telephone": "+85512960940",
-      "areaServed": [
-            "Kampot",
-            "Cambodia",
-            "Phnom Penh International Airport",
-            "Kep",
-            "Sihanoukville",
-            "Siem Reap",
-            "Bokor Mountain"
-      ],
-      "contactPoint": [
+    <meta
+      name="description"
+      content="Send a WhatsApp taxi request to Kampot Taxi by Tha. Choose route, vehicle, pickup, destination, date, passengers, luggage, and contact details. No backend or data storage."
+    />
+    <link rel="canonical" href="https://kampottaxi.github.io/booking/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Book a Taxi | Kampot Taxi by Tha WhatsApp Request"
+    />
+    <meta
+      property="og:description"
+      content="Send a WhatsApp taxi request to Kampot Taxi by Tha. Choose route, vehicle, pickup, destination, date, passengers, luggage, and contact details. No backend or data storage."
+    />
+    <meta property="og:url" content="https://kampottaxi.github.io/booking/" />
+    <meta property="og:image" content="../assets/images/PhnomPenh1.PNG" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Book a Taxi | Kampot Taxi by Tha WhatsApp Request"
+    />
+    <meta
+      name="twitter:description"
+      content="Send a WhatsApp taxi request to Kampot Taxi by Tha. Choose route, vehicle, pickup, destination, date, passengers, luggage, and contact details. No backend or data storage."
+    />
+    <meta name="twitter:image" content="../assets/images/PhnomPenh1.PNG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Khmer:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TaxiService",
+        "name": "Kampot Taxi by Tha",
+        "serviceType": "Private taxi and driver service",
+        "description": "Send a WhatsApp taxi request to Kampot Taxi by Tha. Choose route, vehicle, pickup, destination, date, passengers, luggage, and contact details. No backend or data storage.",
+        "telephone": "+85512960940",
+        "areaServed": [
+          "Kampot",
+          "Cambodia",
+          "Phnom Penh International Airport",
+          "Kep",
+          "Sihanoukville",
+          "Siem Reap",
+          "Bokor Mountain"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "WhatsApp booking",
+            "telephone": "+85512960940",
+            "availableLanguage": ["English", "Khmer"]
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "Telegram booking",
+            "telephone": "+855964800081",
+            "name": "Telegram: 0964800081"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Book a Taxi | Kampot Taxi by Tha WhatsApp Request",
+          "itemListElement": [
             {
-                  "@type": "ContactPoint",
-                  "contactType": "WhatsApp booking",
-                  "telephone": "+85512960940",
-                  "availableLanguage": [
-                        "English",
-                        "Khmer"
-                  ]
+              "@type": "Offer",
+              "name": "Kampot → Phnom Penh City / Hotel",
+              "description": "Private taxi transfer from Kampot to Phnom Penh city, hotel, or local address. Travel in an air-conditioned SUV or van with luggage space.",
+              "price": "50",
+              "priceCurrency": "USD"
             },
             {
-                  "@type": "ContactPoint",
-                  "contactType": "Telegram booking",
-                  "telephone": "+855964800081",
-                  "name": "Telegram: 0964800081"
+              "@type": "Offer",
+              "name": "Kampot → Phnom Penh Airport",
+              "description": "Private airport transfer from Kampot to Phnom Penh International Airport. Message Tha with your flight time, pickup location, passengers, and luggage.",
+              "price": "60",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Phnom Penh Airport → Kampot",
+              "description": "Private pickup from Phnom Penh Airport to Kampot. Send your arrival time, flight details, passenger count, and luggage for confirmation.",
+              "price": "35",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Kampot → Sihanoukville",
+              "description": "Private taxi from Kampot to Sihanoukville for hotels, beaches, ferry connections, and onward travel.",
+              "price": "50",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Kampot → Kep",
+              "description": "Easy private transfer from Kampot to Kep for beach visits, seafood, hotels, crab market, or coastal stops.",
+              "price": "25",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Kampot → Bokor Mountain",
+              "description": "Private round-trip tour from Kampot to Bokor Mountain area. Good for sightseeing, cool weather, viewpoints, and flexible local stops.",
+              "price": "50",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Kampot → Mangrove Forest Trip",
+              "description": "Private Kampot-area trip to the mangrove forest. Message Tha to confirm route, timing, waiting time, and any boat or entry costs.",
+              "price": "40",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Kampot Full-Day Tour",
+              "description": "A flexible full-day private driver option for Kampot local attractions, viewpoints, countryside stops, Bokor-style routes, or custom plans.",
+              "price": "60",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Kampot Half-Day Tour",
+              "description": "A shorter private tour option around Kampot for travelers who want a flexible half-day plan with a local driver.",
+              "price": "50",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Kampot → Siem Reap",
+              "description": "Private long-distance taxi from Kampot to Siem Reap. Best for travelers who want a direct private route instead of changing buses or vans.",
+              "price": "140",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Kampot → Koh Rong Ferry / Sihanoukville Pier",
+              "description": "Private transfer from Kampot toward the Koh Rong ferry or Sihanoukville pier area. Confirm ferry time and exact pier with Tha before travel.",
+              "price": "170",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "name": "Custom Cambodia Route",
+              "description": "Need another route in Cambodia? Send Tha your pickup location, destination, date, passengers, luggage, and preferred vehicle for a quote.",
+              "price": "Ask for quote"
             }
-      ],
-      "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Book a Taxi | Kampot Taxi by Tha WhatsApp Request",
-            "itemListElement": [
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot → Phnom Penh City / Hotel",
-                        "description": "Private taxi transfer from Kampot to Phnom Penh city, hotel, or local address. Travel in an air-conditioned SUV or van with luggage space.",
-                        "price": "50",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot → Phnom Penh Airport",
-                        "description": "Private airport transfer from Kampot to Phnom Penh International Airport. Message Tha with your flight time, pickup location, passengers, and luggage.",
-                        "price": "60",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Phnom Penh Airport → Kampot",
-                        "description": "Private pickup from Phnom Penh Airport to Kampot. Send your arrival time, flight details, passenger count, and luggage for confirmation.",
-                        "price": "35",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot → Sihanoukville",
-                        "description": "Private taxi from Kampot to Sihanoukville for hotels, beaches, ferry connections, and onward travel.",
-                        "price": "50",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot → Kep",
-                        "description": "Easy private transfer from Kampot to Kep for beach visits, seafood, hotels, crab market, or coastal stops.",
-                        "price": "25",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot → Bokor Mountain",
-                        "description": "Private round-trip tour from Kampot to Bokor Mountain area. Good for sightseeing, cool weather, viewpoints, and flexible local stops.",
-                        "price": "50",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot → Mangrove Forest Trip",
-                        "description": "Private Kampot-area trip to the mangrove forest. Message Tha to confirm route, timing, waiting time, and any boat or entry costs.",
-                        "price": "40",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot Full-Day Tour",
-                        "description": "A flexible full-day private driver option for Kampot local attractions, viewpoints, countryside stops, Bokor-style routes, or custom plans.",
-                        "price": "60",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot Half-Day Tour",
-                        "description": "A shorter private tour option around Kampot for travelers who want a flexible half-day plan with a local driver.",
-                        "price": "50",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot → Siem Reap",
-                        "description": "Private long-distance taxi from Kampot to Siem Reap. Best for travelers who want a direct private route instead of changing buses or vans.",
-                        "price": "140",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Kampot → Koh Rong Ferry / Sihanoukville Pier",
-                        "description": "Private transfer from Kampot toward the Koh Rong ferry or Sihanoukville pier area. Confirm ferry time and exact pier with Tha before travel.",
-                        "price": "170",
-                        "priceCurrency": "USD"
-                  },
-                  {
-                        "@type": "Offer",
-                        "name": "Custom Cambodia Route",
-                        "description": "Need another route in Cambodia? Send Tha your pickup location, destination, date, passengers, luggage, and preferred vehicle for a quote.",
-                        "price": "Ask for quote"
-                  }
-            ]
+          ]
+        }
       }
-}</script>
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-    <div class="topbar">
-      <div class="container topbar-inner">
-        <span data-i18n="topbar">Booking requests welcome 24 hours. Please message 4+ hours ahead when possible.</span>
-        <span>WhatsApp: 012960940 · Telegram: 0964800081</span>
-      </div>
-    </div>
-    <div class="nav-wrap">
-      <div class="container nav-inner">
-        <a class="brand" href="../index.html" aria-label="Kampot Taxi by Tha home">
-          <span class="brand-badge"><svg class="icon icon-car" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15h14l-1.4-5.2A3 3 0 0 0 14.7 8H9.3a3 3 0 0 0-2.9 1.8L5 15Z"/><path d="M6 15v3M18 15v3"/><circle cx="8" cy="18" r="1.5"/><circle cx="16" cy="18" r="1.5"/></svg></span>
-          <span><strong>Kampot Taxi by Tha</strong><small>Private taxi in Cambodia</small></span>
-        </a>
-        <nav class="desktop-nav" aria-label="Main navigation">
-          <a href="../index.html" data-i18n="navHome">Home</a>
-          <a href="../taxi-transfers/index.html" data-i18n="navTransfers">Taxi Transfers</a>
-          <a href="../kampot-tours/index.html" data-i18n="navTours">Kampot Tours</a>
-          <a href="../vehicles/index.html" data-i18n="navVehicles">Vehicles</a>
-          <a href="../booking/index.html" data-i18n="navBooking">Booking</a>
-          <a href="../contact/index.html" data-i18n="navContact">Contact</a>
-        </nav>
-        <div class="nav-actions">
-          <label class="language-label">
-            <span class="sr-only">Language</span>
-            <select class="language-select" aria-label="Language selector">
-              <option value="zh-CN">Chinese</option>
-              <option value="en">English</option>
-              <option value="fr">French</option>
-              <option value="de">German</option>
-              <option value="it">Italian</option>
-              <option value="ko">Korean</option>
-              <option value="pt">Portuguese</option>
-              <option value="ru">Russian</option>
-              <option value="es">Spanish</option>
-              <option value="vi">Vietnamese</option>
-            </select>
-          </label>
-          <a class="header-wa" href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A" target="_blank" rel="noopener" data-i18n="bookWhatsApp">Book on WhatsApp</a>
-          <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <div class="topbar">
+        <div class="container topbar-inner">
+          <span data-i18n="topbar"
+            >Booking requests welcome 24 hours. Please message 4+ hours ahead
+            when possible.</span
+          >
+          <span>WhatsApp: 012960940 · Telegram: 0964800081</span>
         </div>
       </div>
-    </div>
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <div class="mobile-menu-panel">
-        <div class="mobile-menu-head">
-          <strong>Kampot Taxi by Tha</strong>
-          <button class="menu-close" type="button" aria-label="Close menu">×</button>
-        </div>
-        <label class="mobile-language">Language <select class="language-select" aria-label="Mobile language selector"></select></label>
-        <nav class="mobile-nav" aria-label="Mobile navigation">
-          <a href="../index.html" data-i18n="navHome">Home</a>
-          <a href="../taxi-transfers/index.html" data-i18n="navTransfers">Taxi Transfers</a>
-          <a href="../kampot-tours/index.html" data-i18n="navTours">Kampot Tours</a>
-          <a href="../vehicles/index.html" data-i18n="navVehicles">Vehicles</a>
-          <a href="../booking/index.html" data-i18n="navBooking">Booking</a>
-          <a href="../contact/index.html" data-i18n="navContact">Contact</a>
-        </nav>
-        <div class="mobile-contact">
-          <a class="book-button" href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A" target="_blank" rel="noopener" data-i18n="bookWhatsApp">Book on WhatsApp</a>
-          <button class="telegram-open" type="button">Telegram: 0964800081</button>
+      <div class="nav-wrap">
+        <div class="container nav-inner">
+          <a
+            class="brand"
+            href="../index.html"
+            aria-label="Kampot Taxi by Tha home"
+          >
+            <span class="brand-badge"
+              ><svg
+                class="icon icon-car"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M5 15h14l-1.4-5.2A3 3 0 0 0 14.7 8H9.3a3 3 0 0 0-2.9 1.8L5 15Z"
+                />
+                <path d="M6 15v3M18 15v3" />
+                <circle cx="8" cy="18" r="1.5" />
+                <circle cx="16" cy="18" r="1.5" /></svg
+            ></span>
+            <span
+              ><strong>Kampot Taxi by Tha</strong
+              ><small>Private taxi in Cambodia</small></span
+            >
+          </a>
+          <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="../index.html" data-i18n="navHome">Home</a>
+            <a href="../taxi-transfers/index.html" data-i18n="navTransfers"
+              >Taxi Transfers</a
+            >
+            <a href="../kampot-tours/index.html" data-i18n="navTours"
+              >Kampot Tours</a
+            >
+            <a href="../vehicles/index.html" data-i18n="navVehicles"
+              >Vehicles</a
+            >
+            <a href="../booking/index.html" data-i18n="navBooking">Booking</a>
+            <a href="../contact/index.html" data-i18n="navContact">Contact</a>
+          </nav>
+          <div class="nav-actions">
+            <label class="language-label">
+              <span class="sr-only">Language</span>
+              <select class="language-select" aria-label="Language selector">
+                <option value="zh-CN">Chinese</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="it">Italian</option>
+                <option value="ko">Korean</option>
+                <option value="pt">Portuguese</option>
+                <option value="ru">Russian</option>
+                <option value="es">Spanish</option>
+                <option value="vi">Vietnamese</option>
+              </select>
+            </label>
+            <a
+              class="header-wa"
+              href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A"
+              target="_blank"
+              rel="noopener"
+              data-i18n="bookWhatsApp"
+              >Book on WhatsApp</a
+            >
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              aria-label="Open menu"
+            >
+              <span></span><span></span><span></span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-    <main id="main"><section class="page-hero"><div class="container"><p class="eyebrow">Booking</p><h1>Send a taxi request on WhatsApp</h1><p>Fill the details below. This website does not store your data or submit to a server. The button opens WhatsApp with your message.</p></div></section>
-  <section class="section"><div class="container booking-layout">
-    <form class="booking-form" id="booking-form">
-      <label><span data-i18n="routeTrip">Route / trip</span><select name="route" id="route-select" required><option value="">Choose a route</option><option value="Kampot to Phnom Penh City / Hotel">Kampot → Phnom Penh City / Hotel</option><option value="Kampot to Phnom Penh Airport">Kampot → Phnom Penh Airport</option><option value="Phnom Penh Airport to Kampot">Phnom Penh Airport → Kampot</option><option value="Kampot to Sihanoukville">Kampot → Sihanoukville</option><option value="Kampot to Kep">Kampot → Kep</option><option value="Kampot to Bokor Mountain">Kampot → Bokor Mountain</option><option value="Kampot Mangrove Forest Trip">Kampot → Mangrove Forest Trip</option><option value="Kampot Full-Day Tour">Kampot Full-Day Tour</option><option value="Kampot Half-Day Tour">Kampot Half-Day Tour</option><option value="Kampot to Siem Reap">Kampot → Siem Reap</option><option value="Kampot to Koh Rong Ferry / Sihanoukville Pier">Kampot → Koh Rong Ferry / Sihanoukville Pier</option><option value="Custom Cambodia Route">Custom Cambodia Route</option></select></label>
-      <label><span data-i18n="vehicle">Vehicle</span><select name="vehicle"><option>SUV or Van</option><option>SUV</option><option>Van</option><option>Not sure</option></select></label>
-      <label><span>Travel date</span><input name="date" type="date" required></label>
-      <label><span>Travel time</span><input name="time" type="time"></label>
-      <label><span data-i18n="pickup">Pickup location</span><input name="pickup" type="text" required placeholder="Hotel, airport, or address"></label>
-      <label><span data-i18n="destination">Destination</span><input name="destination" type="text" required placeholder="Where do you want to go?"></label>
-      <label><span data-i18n="passengers">Passengers</span><input name="passengers" type="number" min="1" max="7" placeholder="2"></label>
-      <label><span data-i18n="luggage">Luggage</span><input name="luggage" type="text" placeholder="2 suitcases"></label>
-      <label><span data-i18n="name">Name</span><input name="name" type="text" autocomplete="name"></label>
-      <label><span>Contact number / WhatsApp</span><input name="contact" type="text" autocomplete="tel"></label>
-      <label class="full"><span>Notes</span><textarea name="notes" rows="4" placeholder="Flight number, stops, waiting time, special requests"></textarea></label>
-      <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
-      <button class="book-button full" type="submit" data-i18n="sendWhatsApp">Send request on WhatsApp</button>
-      <noscript><a class="details-button wide" href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A" target="_blank" rel="noopener">Open generic WhatsApp request</a></noscript>
-    </form>
-    <aside class="booking-side">
-      <h2>Before booking</h2>
-      <ul><li>Booking requests are welcome 24 hours a day.</li><li>Please message at least 4 hours before pickup when possible.</li><li>Payment by ABA or cash at pickup.</li><li>Prices are "From" prices and should be confirmed with Tha.</li><li>Simple English and Google Translate welcome.</li></ul>
-      <p class="khmer" lang="km">អាចទាក់ទងតាម Telegram ឬ WhatsApp ដើម្បីសួរតម្លៃ និងកក់ឡាន។</p>
-    </aside>
-  </div></section>
-  <section class="note-band">
-    <div class="container note-grid">
-      <div><strong data-i18n="pricingNoteTitle">From-price note</strong><p>Prices are shown as "From" prices. Final price may depend on pickup location, destination, stops, passengers, luggage, vehicle, and current travel conditions. Message Tha to confirm before travel.</p></div>
-      <div><strong data-i18n="payment">Payment</strong><p>Payment by ABA or cash at pickup.</p></div>
-      <div><strong>Separate costs</strong><p>Entry fees, ferry tickets, boat tickets, parking, and attraction costs are separate unless confirmed in your quote.</p></div>
-    </div>
-  </section></main>
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <div class="mobile-menu-panel">
+          <div class="mobile-menu-head">
+            <strong>Kampot Taxi by Tha</strong>
+            <button class="menu-close" type="button" aria-label="Close menu">
+              ×
+            </button>
+          </div>
+          <label class="mobile-language"
+            >Language
+            <select
+              class="language-select"
+              aria-label="Mobile language selector"
+            ></select
+          ></label>
+          <nav class="mobile-nav" aria-label="Mobile navigation">
+            <a href="../index.html" data-i18n="navHome">Home</a>
+            <a href="../taxi-transfers/index.html" data-i18n="navTransfers"
+              >Taxi Transfers</a
+            >
+            <a href="../kampot-tours/index.html" data-i18n="navTours"
+              >Kampot Tours</a
+            >
+            <a href="../vehicles/index.html" data-i18n="navVehicles"
+              >Vehicles</a
+            >
+            <a href="../booking/index.html" data-i18n="navBooking">Booking</a>
+            <a href="../contact/index.html" data-i18n="navContact">Contact</a>
+          </nav>
+          <div class="mobile-contact">
+            <a
+              class="book-button"
+              href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A"
+              target="_blank"
+              rel="noopener"
+              data-i18n="bookWhatsApp"
+              >Book on WhatsApp</a
+            >
+            <button class="telegram-open" type="button">
+              Telegram: 0964800081
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Booking</p>
+          <h1>Send a taxi request on WhatsApp</h1>
+          <p>
+            Fill the details below. This website does not store your data or
+            submit to a server. The button opens WhatsApp with your message.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container booking-layout">
+          <form class="booking-form" id="booking-form">
+            <label
+              ><span data-i18n="routeTrip">Route / trip</span
+              ><select name="route" id="route-select" required>
+                <option value="">Choose a route</option>
+                <option value="Kampot to Phnom Penh City / Hotel">
+                  Kampot → Phnom Penh City / Hotel
+                </option>
+                <option value="Kampot to Phnom Penh Airport">
+                  Kampot → Phnom Penh Airport
+                </option>
+                <option value="Phnom Penh Airport to Kampot">
+                  Phnom Penh Airport → Kampot
+                </option>
+                <option value="Kampot to Sihanoukville">
+                  Kampot → Sihanoukville
+                </option>
+                <option value="Kampot to Kep">Kampot → Kep</option>
+                <option value="Kampot to Bokor Mountain">
+                  Kampot → Bokor Mountain
+                </option>
+                <option value="Kampot Mangrove Forest Trip">
+                  Kampot → Mangrove Forest Trip
+                </option>
+                <option value="Kampot Full-Day Tour">
+                  Kampot Full-Day Tour
+                </option>
+                <option value="Kampot Half-Day Tour">
+                  Kampot Half-Day Tour
+                </option>
+                <option value="Kampot to Siem Reap">Kampot → Siem Reap</option>
+                <option value="Kampot to Koh Rong Ferry / Sihanoukville Pier">
+                  Kampot → Koh Rong Ferry / Sihanoukville Pier
+                </option>
+                <option value="Custom Cambodia Route">
+                  Custom Cambodia Route
+                </option>
+              </select></label
+            >
+            <label
+              ><span data-i18n="vehicle">Vehicle</span
+              ><select name="vehicle">
+                <option>SUV or Van</option>
+                <option>SUV</option>
+                <option>Van</option>
+                <option>Not sure</option>
+              </select></label
+            >
+            <label
+              ><span>Travel date</span><input name="date" type="date" required
+            /></label>
+            <label
+              ><span>Travel time</span><input name="time" type="time"
+            /></label>
+            <label
+              ><span data-i18n="pickup">Pickup location</span
+              ><input
+                name="pickup"
+                type="text"
+                required
+                placeholder="Hotel, airport, or address"
+            /></label>
+            <label
+              ><span data-i18n="destination">Destination</span
+              ><input
+                name="destination"
+                type="text"
+                required
+                placeholder="Where do you want to go?"
+            /></label>
+            <label
+              ><span data-i18n="passengers">Passengers</span
+              ><input
+                name="passengers"
+                type="number"
+                min="1"
+                max="7"
+                placeholder="2"
+            /></label>
+            <label
+              ><span data-i18n="luggage">Luggage</span
+              ><input name="luggage" type="text" placeholder="2 suitcases"
+            /></label>
+            <label
+              ><span data-i18n="name">Name</span
+              ><input name="name" type="text" autocomplete="name"
+            /></label>
+            <label
+              ><span>Contact number / WhatsApp</span
+              ><input name="contact" type="text" autocomplete="tel"
+            /></label>
+            <label class="full"
+              ><span>Notes</span
+              ><textarea
+                name="notes"
+                rows="4"
+                placeholder="Flight number, stops, waiting time, special requests"
+              ></textarea>
+            </label>
+            <p
+              class="form-error"
+              id="form-error"
+              role="alert"
+              aria-live="polite"
+            ></p>
+            <button
+              class="book-button full"
+              type="submit"
+              data-i18n="sendWhatsApp"
+            >
+              Send request on WhatsApp
+            </button>
+            <noscript
+              ><a
+                class="details-button wide"
+                href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A"
+                target="_blank"
+                rel="noopener"
+                >Open generic WhatsApp request</a
+              ></noscript
+            >
+          </form>
+          <aside class="booking-side">
+            <h2>Before booking</h2>
+            <ul>
+              <li>Booking requests are welcome 24 hours a day.</li>
+              <li>
+                Please message at least 4 hours before pickup when possible.
+              </li>
+              <li>Payment by ABA or cash at pickup.</li>
+              <li>
+                Prices are "From" prices and should be confirmed with Tha.
+              </li>
+              <li>Simple English and Google Translate welcome.</li>
+            </ul>
+            <p class="khmer" lang="km">
+              អាចទាក់ទងតាម Telegram ឬ WhatsApp ដើម្បីសួរតម្លៃ និងកក់ឡាន។
+            </p>
+          </aside>
+        </div>
+      </section>
+      <section class="note-band">
+        <div class="container note-grid">
+          <div>
+            <strong data-i18n="pricingNoteTitle">From-price note</strong>
+            <p>
+              Prices are shown as "From" prices. Final price may depend on
+              pickup location, destination, stops, passengers, luggage, vehicle,
+              and current travel conditions. Message Tha to confirm before
+              travel.
+            </p>
+          </div>
+          <div>
+            <strong data-i18n="payment">Payment</strong>
+            <p>Payment by ABA or cash at pickup.</p>
+          </div>
+          <div>
+            <strong>Separate costs</strong>
+            <p>
+              Entry fees, ferry tickets, boat tickets, parking, and attraction
+              costs are separate unless confirmed in your quote.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>Kampot Taxi by Tha</strong>
-        <p>Private taxi transfers, Kampot tours, airport pickups, and long-distance rides across Cambodia.</p>
-        <p class="khmer" lang="km">អាចទាក់ទងតាម Telegram ឬ WhatsApp ដើម្បីសួរតម្លៃ និងកក់ឡាន។</p>
+      <div class="container footer-grid">
+        <div>
+          <strong>Kampot Taxi by Tha</strong>
+          <p>
+            Private taxi transfers, Kampot tours, airport pickups, and
+            long-distance rides across Cambodia.
+          </p>
+          <p class="khmer" lang="km">
+            អាចទាក់ទងតាម Telegram ឬ WhatsApp ដើម្បីសួរតម្លៃ និងកក់ឡាន។
+          </p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="../taxi-transfers/index.html">Taxi Transfers</a>
+          <a href="../kampot-tours/index.html">Kampot Tours</a>
+          <a href="../vehicles/index.html">Vehicles</a>
+          <a href="../booking/index.html">Booking</a>
+          <a href="../contact/index.html">Contact</a>
+        </nav>
+        <div class="footer-contact">
+          <a
+            href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp: 012960940</a
+          >
+          <span>Telegram: 0964800081</span>
+          <span>Payment by ABA or cash at pickup.</span>
+        </div>
       </div>
-      <nav aria-label="Footer navigation">
-        <a href="../taxi-transfers/index.html">Taxi Transfers</a>
-        <a href="../kampot-tours/index.html">Kampot Tours</a>
-        <a href="../vehicles/index.html">Vehicles</a>
-        <a href="../booking/index.html">Booking</a>
-        <a href="../contact/index.html">Contact</a>
-      </nav>
-      <div class="footer-contact">
-        <a href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A" target="_blank" rel="noopener">WhatsApp: 012960940</a>
-        <span>Telegram: 0964800081</span>
-        <span>Payment by ABA or cash at pickup.</span>
+    </footer>
+    <div class="floating-contact" aria-label="Quick contact buttons">
+      <a
+        class="float-wa"
+        href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A"
+        target="_blank"
+        rel="noopener"
+        aria-label="Open WhatsApp booking message"
+        >WhatsApp</a
+      >
+      <button
+        class="float-telegram telegram-open"
+        type="button"
+        aria-label="Show Telegram contact"
+      >
+        ✈
+      </button>
+    </div>
+    <div class="telegram-modal" id="telegram-modal" hidden>
+      <div
+        class="telegram-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="telegram-title"
+      >
+        <button
+          class="telegram-close"
+          type="button"
+          aria-label="Close Telegram contact"
+        >
+          ×
+        </button>
+        <h2 id="telegram-title">Telegram Contact</h2>
+        <p>Telegram: <strong id="telegram-number">0964800081</strong></p>
+        <div class="telegram-actions">
+          <button class="copy-telegram" type="button" data-copy="0964800081">
+            Copy number
+          </button>
+          <a href="tel:+855964800081">Call Telegram number</a>
+        </div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
       </div>
     </div>
-  </footer><div class="floating-contact" aria-label="Quick contact buttons">
-    <a class="float-wa" href="https://wa.me/85512960940?text=Hello%20Tha%2C%20I%20would%20like%20to%20book%20or%20request%20a%20quote.%0ARoute%3A%20%0AVehicle%3A%20SUV%20or%20Van%0ATravel%20date%2Ftime%3A%0APickup%20location%3A%0ADestination%3A%0ANumber%20of%20passengers%3A%0ALuggage%3A%0AName%3A%0ANotes%3A" target="_blank" rel="noopener" aria-label="Open WhatsApp booking message">WhatsApp</a>
-    <button class="float-telegram telegram-open" type="button" aria-label="Show Telegram contact">✈</button>
-  </div>
-  <div class="telegram-modal" id="telegram-modal" hidden>
-    <div class="telegram-card" role="dialog" aria-modal="true" aria-labelledby="telegram-title">
-      <button class="telegram-close" type="button" aria-label="Close Telegram contact">×</button>
-      <h2 id="telegram-title">Telegram Contact</h2>
-      <p>Telegram: <strong id="telegram-number">0964800081</strong></p>
-      <div class="telegram-actions">
-        <button class="copy-telegram" type="button" data-copy="0964800081">Copy number</button>
-        <a href="tel:+855964800081">Call Telegram number</a>
-      </div>
-      <p class="copy-status" role="status" aria-live="polite"></p>
-    </div>
-  </div>
     <script src="../data/i18n.js"></script>
     <script src="../data/routes.js"></script>
     <script src="../script.js"></script>

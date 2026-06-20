@@ -446,6 +446,7 @@ function head({
   image = "assets/images/PhnomPenh2.PNG",
 }) {
   const canonical = `${domain}/${urlPath}`.replace(/\/$/, "/");
+  const shareImage = "assets/images/PhnomPenh1.PNG";
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -458,11 +459,11 @@ function head({
     <meta property="og:title" content="${esc(title)}">
     <meta property="og:description" content="${esc(desc)}">
     <meta property="og:url" content="${canonical}">
-    <meta property="og:image" content="${esc(rel(prefix, image))}">
+    <meta property="og:image" content="${esc(rel(prefix, shareImage))}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${esc(title)}">
     <meta name="twitter:description" content="${esc(desc)}">
-    <meta name="twitter:image" content="${esc(rel(prefix, image))}">
+    <meta name="twitter:image" content="${esc(rel(prefix, shareImage))}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Khmer:wght@400;600;700&display=swap" rel="stylesheet">
@@ -1054,6 +1055,8 @@ NEVER EVER EVER commit or push this website to any repository other than:
 - \`KampotTaxi/KampotTaxi.github.io\`
 
 This site is hosted from the \`KampotTaxi.github.io\` repository under the \`KampotTaxi\` GitHub organization. Before any push, verify the git remote points to that repository and not to any personal-account or unrelated website repository.
+
+When website changes are complete, commit them and push to the \`main\` branch of \`KampotTaxi/KampotTaxi.github.io\`.
 
 Pay special attention to never overwrite, commit to, or push to either of the other websites hosted under the same GitHub account:
 

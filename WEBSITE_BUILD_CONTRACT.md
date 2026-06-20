@@ -16,6 +16,8 @@ NEVER EVER EVER commit or push this website to any repository other than:
 
 This site is hosted from the `KampotTaxi.github.io` repository under the `KampotTaxi` GitHub organization. Before any push, verify the git remote points to that repository and not to any personal-account or unrelated website repository.
 
+When website changes are complete, commit them and push to the `main` branch of `KampotTaxi/KampotTaxi.github.io`.
+
 Pay special attention to never overwrite, commit to, or push to either of the other websites hosted under the same GitHub account:
 
 - `hagerlabs.com`
