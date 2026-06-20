@@ -359,6 +359,7 @@ function header(prefix) {
               <option value="fr">French</option>
               <option value="de">German</option>
               <option value="it">Italian</option>
+              <option value="km">Khmer (Cambodian)</option>
               <option value="ko">Korean</option>
               <option value="pt">Portuguese</option>
               <option value="ru">Russian</option>
@@ -867,6 +868,8 @@ function dataRoutes() {
 }
 
 function i18n() {
+  const generated = path.join(root, "tools/i18n-static.js");
+  if (fs.existsSync(generated)) return fs.readFileSync(generated, "utf8");
   const base = {
     navHome: "Home",
     navTransfers: "Taxi Transfers",
@@ -1182,16 +1185,17 @@ Do not use images from cambodiatourtaxi.com. Do not hotlink reference images.
 
 ## Language Selector
 
-Options: Chinese Simplified, English, French, German, Italian, Korean, Portuguese, Russian, Spanish, Vietnamese.
+Options: Chinese Simplified, English, French, German, Italian, Khmer (Cambodian), Korean, Portuguese, Russian, Spanish, Vietnamese.
 
 Behavior:
 
-- Detect navigator.language on first load.
+- Detect navigator.languages / navigator.language on first load.
 - Default to English if unsupported.
 - Persist user selection in localStorage.
-- Update visible UI labels and html lang.
-- No live translation APIs.
-- English remains authoritative. Route names may remain English.
+- Update visible UI labels, page text, accessibility labels, form placeholders, metadata, and html lang.
+- No live translation APIs in the browser.
+- English remains authoritative. Translated strings are generated statically into data/i18n.js.
+- The Khmer option label must be "Khmer (Cambodian)".
 
 ## WhatsApp Message
 
@@ -1322,9 +1326,8 @@ function styles() {
 }
 
 function script() {
-  return `(function(){const WA="85512960940";const TG="0964800081";function msg(route){return["Hello Tha, I would like to book or request a quote.","Route: "+(route||""),"Vehicle: SUV or Van","Travel date/time:","Pickup location:","Destination:","Number of passengers:","Luggage:","Name:","Notes:"].join("\\n")}function href(route){return"https://wa.me/"+WA+"?text="+encodeURIComponent(msg(route))}document.querySelectorAll("[data-wa-route]").forEach(a=>{a.href=href(a.dataset.waRoute||"")});document.querySelectorAll(".menu-toggle").forEach(btn=>btn.addEventListener("click",()=>{const m=document.getElementById("mobile-menu");if(!m)return;m.hidden=false;btn.setAttribute("aria-expanded","true")}));document.querySelectorAll(".menu-close").forEach(btn=>btn.addEventListener("click",()=>{const m=document.getElementById("mobile-menu");const t=document.querySelector(".menu-toggle");if(!m)return;m.hidden=true;t&&t.setAttribute("aria-expanded","false")}));const langs=["zh-CN","en","fr","de","it","ko","pt","ru","es","vi"];const labels={"zh-CN":"Chinese","en":"English","fr":"French","de":"German","it":"Italian","ko":"Korean","pt":"Portuguese","ru":"Russian","es":"Spanish","vi":"Vietnamese"};const selects=[...document.querySelectorAll(".language-select")];if(selects.length>1&&selects[1].options.length===0){langs.forEach(l=>selects[1].append(new Option(labels[l],l)))}function detect(){const saved=localStorage.getItem("kt_lang");if(saved&&langs.includes(saved))return saved;const nav=(navigator.language||"en").toLowerCase();if(nav.startsWith("zh"))return"zh-CN";const base=nav.split("-")[0];return langs.includes(base)?base:"en"}function applyLang(lang){const dict=(window.KT_I18N&&window.KT_I18N[lang])||window.KT_I18N.en;document.documentElement.lang=lang;localStorage.setItem("kt_lang",lang);selects.forEach(s=>s.value=lang);document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(dict[key])el.textContent=dict[key]})}selects.forEach(s=>s.addEventListener("change",e=>applyLang(e.target.value)));if(window.KT_I18N)applyLang(detect());const modal=document.getElementById("telegram-modal");document.querySelectorAll(".telegram-open").forEach(btn=>btn.addEventListener("click",()=>{if(modal)modal.hidden=false}));document.querySelectorAll(".telegram-close").forEach(btn=>btn.addEventListener("click",()=>{if(modal)modal.hidden=true}));modal&&modal.addEventListener("click",e=>{if(e.target===modal)modal.hidden=true});document.querySelectorAll(".copy-telegram").forEach(btn=>btn.addEventListener("click",async()=>{const status=document.querySelector(".copy-status");try{await navigator.clipboard.writeText(btn.dataset.copy||TG);if(status)status.textContent="Copied Telegram number."}catch(e){if(status)status.textContent="Telegram: "+TG}}));const form=document.getElementById("booking-form");if(form){form.addEventListener("submit",e=>{e.preventDefault();const fd=new FormData(form);const route=String(fd.get("route")||"").trim();const pickup=String(fd.get("pickup")||"").trim();const dest=String(fd.get("destination")||"").trim();const date=String(fd.get("date")||"").trim();const err=document.getElementById("form-error");if(!route||!pickup||!dest||!date){if(err)err.textContent="Please add route, pickup location, destination, and travel date.";return}if(err)err.textContent="";const dateTime=[date,String(fd.get("time")||"").trim()].filter(Boolean).join(" ");const lines=["Hello Tha, I would like to book or request a quote.","Route: "+route,"Vehicle: "+String(fd.get("vehicle")||"SUV or Van"),"Travel date/time: "+dateTime,"Pickup location: "+pickup,"Destination: "+dest,"Number of passengers: "+String(fd.get("passengers")||""),"Luggage: "+String(fd.get("luggage")||""),"Name: "+String(fd.get("name")||""),"Contact number / WhatsApp: "+String(fd.get("contact")||""),"Notes: "+String(fd.get("notes")||"")];window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(lines.join("\\n")),"_blank","noopener,noreferrer")})}})();`;
+  return fs.readFileSync(path.join(root, "tools/site-runtime.js"), "utf8");
 }
-
 function robots() {
   return `User-agent: *
 Allow: /

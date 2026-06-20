@@ -146,16 +146,17 @@ Do not use images from cambodiatourtaxi.com. Do not hotlink reference images.
 
 ## Language Selector
 
-Options: Chinese Simplified, English, French, German, Italian, Korean, Portuguese, Russian, Spanish, Vietnamese.
+Options: Chinese Simplified, English, French, German, Italian, Khmer (Cambodian), Korean, Portuguese, Russian, Spanish, Vietnamese.
 
 Behavior:
 
-- Detect navigator.language on first load.
+- Detect navigator.languages / navigator.language on first load.
 - Default to English if unsupported.
 - Persist user selection in localStorage.
-- Update visible UI labels and html lang.
-- No live translation APIs.
-- English remains authoritative. Route names may remain English.
+- Update visible UI labels, page text, accessibility labels, form placeholders, metadata, and html lang.
+- No live translation APIs in the browser.
+- English remains authoritative. Translated strings are generated statically into data/i18n.js.
+- The Khmer option label must be "Khmer (Cambodian)".
 
 ## WhatsApp Message
 
