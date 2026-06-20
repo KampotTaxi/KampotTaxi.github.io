@@ -447,6 +447,7 @@ function head({
 }) {
   const canonical = `${domain}/${urlPath}`.replace(/\/$/, "/");
   const shareImage = "assets/images/PhnomPenh1.PNG";
+  const shareImageUrl = `${domain}/${shareImage}`;
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -459,11 +460,17 @@ function head({
     <meta property="og:title" content="${esc(title)}">
     <meta property="og:description" content="${esc(desc)}">
     <meta property="og:url" content="${canonical}">
-    <meta property="og:image" content="${esc(rel(prefix, shareImage))}">
+    <meta property="og:image" content="${esc(shareImageUrl)}">
+    <meta property="og:image:secure_url" content="${esc(shareImageUrl)}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1535">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:image:alt" content="Phnom Penh travel scene for Kampot Taxi by Tha">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${esc(title)}">
     <meta name="twitter:description" content="${esc(desc)}">
-    <meta name="twitter:image" content="${esc(rel(prefix, shareImage))}">
+    <meta name="twitter:image" content="${esc(shareImageUrl)}">
+    <meta name="twitter:image:alt" content="Phnom Penh travel scene for Kampot Taxi by Tha">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Khmer:wght@400;600;700&display=swap" rel="stylesheet">
